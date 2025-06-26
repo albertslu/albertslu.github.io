@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Albert Lu</title>
@@ -10,18 +10,42 @@
       margin: 100px auto;
       padding: 0 20px;
       line-height: 1.6;
+      background-color: white;
+      color: black;
+      transition: background-color 0.3s, color 0.3s;
     }
     a { color: #b30000; }
+    #toggle {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
   </style>
 </head>
 <body>
+  <div id="toggle">🌙</div>
+
   <h1>Albert Lu</h1>
   <p><strong>founder, wanderer, fighter</strong></p>
-  <p>Currently building <a href="https://talktococo.club" target="_blank">coco</a> </p>
+  <p>Currently building <a href="https://talktococo.club" target="_blank">coco</a></p>
   <p>@ texasexes</p>
   <p>Find me on 
     <a href="https://github.com/albertslu">GitHub</a> · 
-    <a href="https://linkedin.com/in/albertlu">LinkedIn</a>
+    <a href="https://linkedin.com/in/albertlu">LinkedIn</a> · 
+    <a href="https://www.instagram.com/albert_lu_/" target="_blank">Instagram</a>
   </p>
+
+  <script>
+    const toggle = document.getElementById("toggle");
+    toggle.addEventListener("click", () => {
+      const body = document.body;
+      const dark = body.style.backgroundColor === "black";
+      body.style.backgroundColor = dark ? "white" : "black";
+      body.style.color = dark ? "black" : "white";
+      toggle.textContent = dark ? "🌙" : "☀️";
+    });
+  </script>
 </body>
 </html>
