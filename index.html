@@ -43,7 +43,7 @@
     toggle.addEventListener("click", () => {
       const body = document.body;
       const dark = body.style.backgroundColor === "black";
-      const dark = body.backgroundColor === "black"; // ❌ wrong: `body.backgroundColor` is undefined
+      body.style.backgroundColor = dark ? "white" : "black";
       body.style.color = dark ? "black" : "white";
       toggle.textContent = dark ? "🌙" : "☀️";
     });
