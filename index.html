@@ -30,7 +30,10 @@
     }
 
     .projects-section {
-      margin-top: 48px;
+      margin-top: 32px;
+      max-width: 480px;
+      font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+      font-size: 0.98em;
     }
 
     .project-card {
@@ -38,24 +41,25 @@
       align-items: flex-start;
       border: 1px solid #eee;
       border-radius: 10px;
-      padding: 16px;
-      margin-bottom: 20px;
-      max-width: 600px;
+      padding: 10px;
+      margin-bottom: 14px;
+      max-width: 480px;
       background: #fafafa;
     }
 
     .project-image {
-      width: 100px;
-      height: 100px;
+      width: 70px;
+      height: 70px;
       background: #ddd;
       border-radius: 8px;
-      margin-right: 20px;
+      margin-right: 14px;
       object-fit: cover;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 0.9em;
       color: #888;
+      overflow: hidden;
     }
 
     .project-info {
@@ -63,13 +67,13 @@
     }
 
     .project-title {
-      font-size: 1.2em;
+      font-size: 1.08em;
       font-weight: bold;
-      margin-bottom: 4px;
+      margin-bottom: 2px;
     }
 
     .project-desc {
-      margin-bottom: 4px;
+      margin-bottom: 2px;
     }
   </style>
 </head>
@@ -90,24 +94,47 @@
     <a href="https://github.com/albertslu">GitHub</a> ·
     <a href="https://linkedin.com/in/albertlu">LinkedIn</a> ·
     <a href="https://www.instagram.com/albert_lu_/" target="_blank">Instagram</a>
+    · <a href="#projects">Projects</a>
   </p>
 
-  <div class="projects-section">
+  <div class="projects-section" id="projects">
     <h2>My Projects</h2>
-    <div class="project-card">
-      <div class="project-image">Image</div>
+    <div class="project-card" id="project1">
+      <a href="https://example.com/project1" target="_blank" class="project-image"><img src="images/project1.png"
+          alt="Project 1" width="70" height="70" style="border-radius:8px;"></a>
       <div class="project-info">
-        <div class="project-title">Project Title</div>
+        <a href="#project1" class="project-title">Project Title 1</a>
         <div class="project-desc">Short description of the project goes here. You can add more details about what the
           project does, technologies used, etc.</div>
+        <a href="https://example.com/project1" target="_blank">View Project</a>
       </div>
     </div>
-    <div class="project-card">
-      <div class="project-image">Image</div>
+    <div class="project-card" id="project2">
+      <a href="https://example.com/project2" target="_blank" class="project-image"><img src="images/project2.png"
+          alt="Project 2" width="70" height="70" style="border-radius:8px;"></a>
       <div class="project-info">
-        <div class="project-title">Another Project</div>
+        <a href="#project2" class="project-title">Project Title 2</a>
         <div class="project-desc">Another project description. Replace this with your actual project details and images.
         </div>
+        <a href="https://example.com/project2" target="_blank">View Project</a>
+      </div>
+    </div>
+    <div class="project-card" id="project3">
+      <a href="https://example.com/project3" target="_blank" class="project-image"><img src="images/project3.png"
+          alt="Project 3" width="70" height="70" style="border-radius:8px;"></a>
+      <div class="project-info">
+        <a href="#project3" class="project-title">Project Title 3</a>
+        <div class="project-desc">A third project with a short description and a link.</div>
+        <a href="https://example.com/project3" target="_blank">View Project</a>
+      </div>
+    </div>
+    <div class="project-card" id="project4">
+      <a href="https://example.com/project4" target="_blank" class="project-image"><img src="images/project4.png"
+          alt="Project 4" width="70" height="70" style="border-radius:8px;"></a>
+      <div class="project-info">
+        <a href="#project4" class="project-title">Project Title 4</a>
+        <div class="project-desc">A fourth project with a short description and a link.</div>
+        <a href="https://example.com/project4" target="_blank">View Project</a>
       </div>
     </div>
   </div>
