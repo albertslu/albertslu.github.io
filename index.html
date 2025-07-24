@@ -18,7 +18,12 @@
     }
 
     a {
-      color: #b30000;
+      color: black;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     #toggle {
@@ -39,12 +44,20 @@
     .project-card {
       display: flex;
       align-items: flex-start;
-      border: 1px solid #eee;
-      border-radius: 10px;
-      padding: 10px;
-      margin-bottom: 14px;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 18px;
       max-width: 900px;
-      background: #fafafa;
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .project-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      border-color: #d0d0d0;
     }
 
     .project-image {
@@ -72,13 +85,16 @@
     }
 
     .project-title {
-      font-size: 1.08em;
+      font-size: 1.1em;
       font-weight: bold;
-      margin-bottom: 2px;
+      margin-bottom: 6px;
+      color: #333;
     }
 
     .project-desc {
-      margin-bottom: 2px;
+      margin-bottom: 8px;
+      color: #555;
+      line-height: 1.5;
     }
   </style>
 </head>
@@ -87,22 +103,22 @@
   <div id="toggle">🌙</div>
 
   <div style="max-width: 900px;">
-    <div style="display: flex; align-items: center; margin-bottom: 8px;">
-      <span style="font-size: 2em; font-weight: bold; margin-right: 10px;">Albert Lu</span>
+    <div style="display: flex; align-items: center; margin-bottom: 16px;">
+      <span style="font-size: 2em; font-weight: bold; margin-right: 12px;">Albert Lu</span>
       <img src="images/headshot.png" alt="Headshot"
         style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 2px solid #eee;">
     </div>
-    <p>Hi! I'm Albert, I'm currently building cursor for creatives</p>
-    <p>
+    <p style="margin-bottom: 12px;">Hi! I'm Albert, I'm currently building cursor for creatives</p>
+    <p style="margin-bottom: 12px;">
       In the past I built an iMessage suggestions app and a mental health therapy app for teens. I studied Electrical and
       Computer Engineering at UT Austin. In my free time I enjoy traveling and MMA.
     </p>
 
-    <p>@ texasexes</p>
+    <p style="font-style: italic; color: #666;">@ texasexes</p>
   </div>
 
   <div class="projects-section" id="projects">
-    <h3>Check out some of my other apps below</h3>
+    <h3 style="margin-bottom: 20px; color: #333;">Check out some of my other apps below</h3>
     <div class="project-card" id="project1">
       <a href="https://apps.apple.com/us/app/coco-ai-furry-friend/id6748201136" target="_blank"
         class="project-image"><img src="images/project1.png" alt="Project 1" width="70" height="70"
